@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+.main{
+  background: #222;
+    font-family: "Lora", serif;
+
+}
+.st{
+      font-family: "Lora", serif;
+
+}
+.container{
+  width: 80%;
+  margin: 3rem auto;
+}
+@keyframes continuousZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
+}
+
+.card img {
+  transition: transform 0.3s ease;
+}
+.card:hover img {
+  animation: continuousZoom 6s linear infinite;
+}
+@media screen and (max-width: 786px) {
+  footer {
+    overflow-x: hidden;
+  }
+}
